@@ -11,6 +11,6 @@ package com.sv.udb.beans;
  */
 public class Demo {
     public Demo(){
-        System.out.println("Hello world:3");
+        System.err.println("Hello world:3");
 }
 }
