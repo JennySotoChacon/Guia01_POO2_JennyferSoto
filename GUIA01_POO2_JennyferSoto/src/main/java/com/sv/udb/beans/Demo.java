@@ -10,5 +10,7 @@ package com.sv.udb.beans;
  * @author Laboratorio
  */
 public class Demo {
-    
+    public Demo(){
+        System.out.println("Hello world:3");
+}
 }
