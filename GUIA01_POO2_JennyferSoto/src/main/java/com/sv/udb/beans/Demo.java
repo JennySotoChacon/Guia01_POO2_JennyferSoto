@@ -13,4 +13,7 @@ public class Demo {
     public Demo(){
         System.err.println("Hello world:3");
 }
+    public void ejemplo1(){
+        System.out.println("SAJDHNAKJSDHNAKSJD");
+    }
 }
