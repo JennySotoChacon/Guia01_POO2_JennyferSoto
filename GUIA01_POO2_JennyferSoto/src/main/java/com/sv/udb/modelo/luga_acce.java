@@ -5,6 +5,8 @@
  */
 package com.sv.udb.modelo;
 
+import java.sql.Blob;
+
 /**
  *
  * @author Owner
@@ -14,12 +16,12 @@ public class luga_acce {
     private String nomb_luga_acce;
     private String fech_alta;
     private String fech_baja;
-    private String esta;
+    private Blob esta;
 
     public luga_acce() {
     }
 
-    public luga_acce(int codi_luga_acce, String nomb_luga_acce, String fech_alta, String fech_baja, String esta) {
+    public luga_acce(int codi_luga_acce, String nomb_luga_acce, String fech_alta, String fech_baja, Blob esta) {
         this.codi_luga_acce = codi_luga_acce;
         this.nomb_luga_acce = nomb_luga_acce;
         this.fech_alta = fech_alta;
@@ -59,11 +61,11 @@ public class luga_acce {
         this.fech_baja = fech_baja;
     }
 
-    public String getEsta() {
+    public Blob getEsta() {
         return esta;
     }
 
-    public void setEsta(String esta) {
+    public void setEsta(Blob esta) {
         this.esta = esta;
     }
 

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package com.sv.udb.modelo;
-
+import java.sql.Blob;
 /**
  *
  * @author Owner
@@ -22,12 +22,12 @@ public class unid_orga {
     private ubic_geof codi_ubic_geof;
     private String fech_alta;
     private String fech_baja;
-    private String esta;
+    private Blob esta;
 
     public unid_orga() {
     }
 
-    public unid_orga(int codi_unid_orga, String nomb_unid_orga, String sigl_unid_orga, unid_orga codi_unid_orga_supe, String dire_unid_orga, String tele_unid_orga, String fax_unid_orga, String emai_unid_orga, String cont_unid_orga, ubic_geof codi_ubic_geof, String fech_alta, String fech_baja, String esta) {
+    public unid_orga(int codi_unid_orga, String nomb_unid_orga, String sigl_unid_orga, unid_orga codi_unid_orga_supe, String dire_unid_orga, String tele_unid_orga, String fax_unid_orga, String emai_unid_orga, String cont_unid_orga, ubic_geof codi_ubic_geof, String fech_alta, String fech_baja, Blob esta) {
         this.codi_unid_orga = codi_unid_orga;
         this.nomb_unid_orga = nomb_unid_orga;
         this.sigl_unid_orga = sigl_unid_orga;
@@ -139,11 +139,11 @@ public class unid_orga {
         this.fech_baja = fech_baja;
     }
 
-    public String getEsta() {
+    public Blob getEsta() {
         return esta;
     }
 
-    public void setEsta(String esta) {
+    public void setEsta(Blob esta) {
         this.esta = esta;
     }
 

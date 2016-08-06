@@ -5,6 +5,8 @@
  */
 package com.sv.udb.modelo;
 
+import java.sql.Blob;
+
 /**
  *
  * @author Owner
@@ -22,12 +24,12 @@ public class Pers {
     private ubic_geof codi_ubic_geof;
     private String fech_alta;
     private String fech_baja;
-    private String esta;
+    private Blob esta;
 
     public Pers() {
     }
 
-    public Pers(int codi_pers, String nomb_pers, String apel_pers, tipo_pers codi_tipo_pers, String gene_pers, String fech_naci_pers, String dui_pers, String nit_pers, String tipo_sang_pers, ubic_geof codi_ubic_geof, String fech_alta, String fech_baja, String esta) {
+    public Pers(int codi_pers, String nomb_pers, String apel_pers, tipo_pers codi_tipo_pers, String gene_pers, String fech_naci_pers, String dui_pers, String nit_pers, String tipo_sang_pers, ubic_geof codi_ubic_geof, String fech_alta, String fech_baja, Blob esta) {
         this.codi_pers = codi_pers;
         this.nomb_pers = nomb_pers;
         this.apel_pers = apel_pers;
@@ -139,11 +141,11 @@ public class Pers {
         this.fech_baja = fech_baja;
     }
 
-    public String getEsta() {
+    public Blob getEsta() {
         return esta;
     }
 
-    public void setEsta(String esta) {
+    public void setEsta(Blob esta) {
         this.esta = esta;
     }
 

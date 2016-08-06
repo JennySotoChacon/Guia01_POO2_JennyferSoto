@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package com.sv.udb.modelo;
-
+import java.sql.Blob;
 /**
  *
  * @author Owner
@@ -15,12 +15,12 @@ public class ubic_geof {
     private int codi_ubic_geof_supe;
     private String fech_alta;
     private String fech_baja;
-    private String esta;
+    private Blob esta;
 
     public ubic_geof() {
     }
 
-    public ubic_geof(int codi_ubic_geof, String nomb_ubic_geof, int codi_ubic_geof_supe, String fech_alta, String fech_baja, String esta) {
+    public ubic_geof(int codi_ubic_geof, String nomb_ubic_geof, int codi_ubic_geof_supe, String fech_alta, String fech_baja, Blob esta) {
         this.codi_ubic_geof = codi_ubic_geof;
         this.nomb_ubic_geof = nomb_ubic_geof;
         this.codi_ubic_geof_supe = codi_ubic_geof_supe;
@@ -69,11 +69,11 @@ public class ubic_geof {
         this.fech_baja = fech_baja;
     }
 
-    public String getEsta() {
+    public Blob getEsta() {
         return esta;
     }
 
-    public void setEsta(String esta) {
+    public void setEsta(Blob esta) {
         this.esta = esta;
     }
 

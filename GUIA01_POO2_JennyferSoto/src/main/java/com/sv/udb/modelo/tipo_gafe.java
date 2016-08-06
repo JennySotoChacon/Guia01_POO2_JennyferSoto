@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package com.sv.udb.modelo;
-
+import java.sql.Blob;
 /**
  *
  * @author Owner
@@ -14,12 +14,12 @@ public class tipo_gafe {
     private String nomb_tipo_gafe;
     private String fech_alta;
     private String fech_baja;
-    private String esta;
+    private Blob esta;
 
     public tipo_gafe() {
     }
 
-    public tipo_gafe(int codi_tipo_gafe, String nomb_tipo_gafe, String fech_alta, String fech_baja, String esta) {
+    public tipo_gafe(int codi_tipo_gafe, String nomb_tipo_gafe, String fech_alta, String fech_baja, Blob esta) {
         this.codi_tipo_gafe = codi_tipo_gafe;
         this.nomb_tipo_gafe = nomb_tipo_gafe;
         this.fech_alta = fech_alta;
@@ -59,11 +59,11 @@ public class tipo_gafe {
         this.fech_baja = fech_baja;
     }
 
-    public String getEsta() {
+    public Blob getEsta() {
         return esta;
     }
 
-    public void setEsta(String esta) {
+    public void setEsta(Blob esta) {
         this.esta = esta;
     }
 
