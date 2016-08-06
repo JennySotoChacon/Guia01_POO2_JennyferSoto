@@ -13,7 +13,7 @@ public class unid_orga {
     private int codi_unid_orga;
     private String nomb_unid_orga;
     private String sigl_unid_orga;
-    private unid_orga codi_unid_orga_supe;
+    private int codi_unid_orga_supe;
     private String dire_unid_orga;
     private String tele_unid_orga;
     private String fax_unid_orga;
@@ -27,7 +27,7 @@ public class unid_orga {
     public unid_orga() {
     }
 
-    public unid_orga(int codi_unid_orga, String nomb_unid_orga, String sigl_unid_orga, unid_orga codi_unid_orga_supe, String dire_unid_orga, String tele_unid_orga, String fax_unid_orga, String emai_unid_orga, String cont_unid_orga, ubic_geof codi_ubic_geof, String fech_alta, String fech_baja, Blob esta) {
+    public unid_orga(int codi_unid_orga, String nomb_unid_orga, String sigl_unid_orga, int codi_unid_orga_supe, String dire_unid_orga, String tele_unid_orga, String fax_unid_orga, String emai_unid_orga, String cont_unid_orga, ubic_geof codi_ubic_geof, String fech_alta, String fech_baja, Blob esta) {
         this.codi_unid_orga = codi_unid_orga;
         this.nomb_unid_orga = nomb_unid_orga;
         this.sigl_unid_orga = sigl_unid_orga;
@@ -67,11 +67,11 @@ public class unid_orga {
         this.sigl_unid_orga = sigl_unid_orga;
     }
 
-    public unid_orga getCodi_unid_orga_supe() {
+    public int getCodi_unid_orga_supe() {
         return codi_unid_orga_supe;
     }
 
-    public void setCodi_unid_orga_supe(unid_orga codi_unid_orga_supe) {
+    public void setCodi_unid_orga_supe(int codi_unid_orga_supe) {
         this.codi_unid_orga_supe = codi_unid_orga_supe;
     }
 
