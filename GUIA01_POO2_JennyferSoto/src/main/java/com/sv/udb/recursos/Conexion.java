@@ -8,6 +8,7 @@ package com.sv.udb.recursos;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.net.URLDecoder;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -38,7 +39,7 @@ public class Conexion {
         try 
         {
             Properties prop = new Properties();
-            String propFileName = System.getProperty("user.dir") + "/config.properties";
+            String propFileName = URLDecoder.decode(this.getClass().getClassLoader().getResource("/config.properties").getPath(), "UTF-8");
             File file = new File(propFileName);
             FileInputStream fis = new FileInputStream(file.getAbsoluteFile());
             prop.load(fis);
