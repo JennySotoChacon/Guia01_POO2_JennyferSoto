@@ -1,6 +1,6 @@
 <%-- 
-    Document   : reporte1
-    Created on : 06-ago-2016, 18:06:56
+    Document   : reporte3
+    Created on : 06-ago-2016, 21:03:02
     Author     : Owner
 --%>
 
@@ -14,11 +14,12 @@
 <%
     Conexion conexion=new Conexion();
   //Ruta del reporte
-   File reportFile = new File(application.getRealPath("reportes/RptPrimero.jasper"));
+   File reportFile = new File(application.getRealPath("reportes/RptTercero.jasper"));
    Map parameters = new HashMap();
-    String codigo =request.getParameter("cmbUnidad");
-    System.out.println(codigo);
-    parameters.put("Codigo_unidad", codigo);
+    String inicio =request.getParameter("fechaInicio");
+    String fin = request.getParameter("fechaFin");
+    parameters.put("fechaInicio", inicio);
+    parameters.put("fechaFin", fin);
     byte[] bytes = JasperRunManager.runReportToPdf(reportFile.getPath (), parameters, conexion.getConn()); 
     response.setContentType("application/pdf");
     response.setContentLength(bytes.length);

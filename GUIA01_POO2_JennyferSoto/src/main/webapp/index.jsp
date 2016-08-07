@@ -50,7 +50,7 @@
             <h1>Visitas realizadas por una persona</h1>
             <table>
                 <tr>
-                    <td>Seleccione una unidad</td>
+                    <td>Seleccione una persona</td>
                 </tr>
                 <tr>
                     <td><select name="cmbPers">
@@ -68,9 +68,27 @@
                     </select></td>
                 </tr>
                 <td>
-                    <input type="submit" name="button" id="SelectedUnidad">
+                    <input type="submit" name="button" id="SelectedPersonas">
                 </td>
             </table>
         </form>
+                        
+        <form id="reporte3" action="reporte3.jsp" method="post">
+            <h1>Visitas realizadas en un periodo de tiempo</h1>
+            <table>
+                <tr>
+                    <td>Seleccione la fecha de inicio</td>
+                    <td><input type="date" name="fechaInicio"></td>
+                </tr>
+                <tr>
+                    <td>Seleccione la fecha de fin</td>
+                    <td><input type="date" name="fechaFin"></td>
+                </tr>
+                <td>
+                    <input type="submit" name="button" id="SelectedFechas">
+                </td>
+            </table>
+        </form>
+                        
     </body>
 </html>
