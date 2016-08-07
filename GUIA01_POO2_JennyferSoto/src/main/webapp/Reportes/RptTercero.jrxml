@@ -58,35 +58,35 @@
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[unid_orga_CODI_UNID_ORGA]]></text>
+				<text><![CDATA[# unidad]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="111" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="f090f39a-b813-4f21-8f68-fae510fbc75c"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[unid_orga_NOMB_UNID_ORGA]]></text>
+				<text><![CDATA[Nombre]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="222" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="e1c14150-cda2-471c-b5a5-0171bd3afaba"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[visi_FECH_HORA_ENTR_VISI]]></text>
+				<text><![CDATA[Entrada]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="333" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="76412755-c531-463c-a512-eeb9ee2abd14"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[visi_FECH_HORA_SALI_VISI]]></text>
+				<text><![CDATA[Salida]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="444" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="d6e64ed9-5800-40ad-9369-1bca13af4ddd"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[visi_MOTI_VISI]]></text>
+				<text><![CDATA[Motivo]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
