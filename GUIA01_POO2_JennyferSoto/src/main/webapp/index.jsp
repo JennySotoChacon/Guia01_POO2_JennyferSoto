@@ -45,5 +45,32 @@
                 </td>
             </table>
         </form>
+        
+        <form id="reporte2" action="reporte2.jsp" method="post">
+            <h1>Visitas realizadas por una persona</h1>
+            <table>
+                <tr>
+                    <td>Seleccione una unidad</td>
+                </tr>
+                <tr>
+                    <td><select name="cmbPers">
+                        <jsp:useBean id="beanPers" class="com.sv.udb.controlador.PersCtrl" scope="page"/>
+                        <c:forEach items="${beanPers.consTodo()}" var="fila">
+                            <c:choose>
+                                <c:when test="{fila.codi_pers eq cmbPers}">
+                                    <option name="codi_pers" value="${fila.codi_pers}" selected="">${fila.nomb_pers}</option>
+                                </c:when>
+                                <c:otherwise>
+                                    <option name="codi_pers" value="${fila.codi_pers}">${fila.nomb_pers}</option>
+                                </c:otherwise>
+                            </c:choose>
+                        </c:forEach>
+                    </select></td>
+                </tr>
+                <td>
+                    <input type="submit" name="button" id="SelectedUnidad">
+                </td>
+            </table>
+        </form>
     </body>
 </html>

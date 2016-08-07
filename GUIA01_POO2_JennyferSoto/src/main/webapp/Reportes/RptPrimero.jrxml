@@ -85,14 +85,14 @@ WHERE v.CODI_UNID_ORGA_VISI = $P{Codigo_unidad}]]>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Fecha/hora de entrada]]></text>
+				<text><![CDATA[Entrada]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="444" y="0" width="111" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="4d931bad-b1a5-43eb-958e-0d244dd1ea73"/>
 				<textElement textAlignment="Center">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Fecha/hora de salida]]></text>
+				<text><![CDATA[Salida]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
