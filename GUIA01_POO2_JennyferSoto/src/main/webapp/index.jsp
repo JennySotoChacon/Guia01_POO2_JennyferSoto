@@ -19,7 +19,8 @@
         <title>Unidades</title>
     </head>
     <body>
-        <form>
+        <form id="reporte1" action="reporte1.jsp" method="post">
+            <h1>Visitas a X unidad</h1>
             <table>
                 <tr>
                     <td>Seleccione una unidad</td>
@@ -39,9 +40,9 @@
                         </c:forEach>
                     </select></td>
                 </tr>
-                <tr>
+                <td>
                     <input type="submit" name="button" id="SelectedUnidad">
-                </tr>
+                </td>
             </table>
         </form>
     </body>
