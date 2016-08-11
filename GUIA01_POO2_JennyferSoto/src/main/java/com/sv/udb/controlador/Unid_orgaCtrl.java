@@ -22,7 +22,7 @@ import javax.swing.JOptionPane;
  * @author Owner
  */
  
-public class UnidOrgaCtrl {
+public class Unid_orgaCtrl {
     
     public List<unid_orga> consTodo()
     {

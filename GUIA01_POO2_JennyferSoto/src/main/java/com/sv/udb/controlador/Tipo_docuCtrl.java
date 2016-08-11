@@ -6,7 +6,6 @@
 package com.sv.udb.controlador;
 
 import com.sv.udb.modelo.tipo_docu;
-import com.sv.udb.modelo.ubic_geof;
 import com.sv.udb.recursos.Conexion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -18,22 +17,22 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Owner
+ * @author vaness
  */
  
-public class UbicGeogCtrl {
+public class Tipo_docuCtrl {
      
-    public List<ubic_geof> consTodo()
+    public List<tipo_docu> consTodo()
     {
-       List<ubic_geof> resp = new ArrayList();
+       List<tipo_docu> resp = new ArrayList();
        Connection cn = new Conexion().getConn();
         try
         {
-            PreparedStatement cmd = cn.prepareStatement("Select * from ubic_geog");
+            PreparedStatement cmd = cn.prepareStatement("Select * from tipo_docu");
             ResultSet rs = cmd.executeQuery();
             while(rs.next())
             {   
-                resp.add(new ubic_geof(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getString(4),rs.getString(5), rs.getBlob(6)));
+                resp.add(new tipo_docu(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4), rs.getBlob(5)));
             }
         }
         catch(Exception err)
