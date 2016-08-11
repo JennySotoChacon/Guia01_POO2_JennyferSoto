@@ -10,7 +10,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@page import="com.sv.udb.controlador.UnidOrgaCtrl"%>
+<%@page import="com.sv.udb.controlador.Unid_orgaCtrl"%>
 <%@page import="com.sv.udb.modelo.unid_orga"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -195,7 +195,7 @@ body {
         </li>
         <li>
           <select name="cmbUnidad">
-                        <jsp:useBean id="beanUnidCtrl" class="com.sv.udb.controlador.UnidOrgaCtrl" scope="page"/>
+                        <jsp:useBean id="beanUnidCtrl" class="com.sv.udb.controlador.Unid_orgaCtrl" scope="page"/>
                         <c:forEach items="${beanUnidCtrl.consTodo()}" var="fila">
                             <c:choose>
                                 <c:when test="{fila.Codi_unid_orga eq cmbUnidad}">
